@@ -4,6 +4,9 @@
   background-color: var(--red);
   position: relative;
   overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 250px;
+  margin-bottom: -250px;
 }
 
 .section-border {
@@ -176,13 +179,13 @@
   }
   .p-matic {
     left: 2px;
-    top: 415px;
+    top: 400px;
   }
 
   .show {
     /* animation: showCard 1s forwards; */
     transform: scale(1.8);
-    top: 50%;
+    top: 30%;
     right: 50%;
     left: 23%;
     bottom: 50%;
