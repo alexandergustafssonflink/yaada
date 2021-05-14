@@ -1,38 +1,85 @@
+body {
+  font-family: "Podkova";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brown: #7d664c;
+  --red: #ee744d;
+  --beige: #f5e9db;
+  --yellow: #ffc80a;
+  --green: #5c7c11;
+}
 .App {
-  text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.moon {
+  position: absolute;
+  width: 500px;
+  top: 250vh;
+  right: 0px;
+  z-index: 100;
+  width: 450px;
+  animation: planetAnimation 50s infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.big-moon {
+  position: absolute;
+  left: -300px;
+  width: 900px;
+  top: 225vh;
+  z-index: 100;
+  animation: planetAnimationX 50s infinite;
+}
+
+@media only screen and (max-width: 500px) {
+  .moon {
+    width: 200px;
+    top: 270vh;
+  }
+
+  .big-moon {
+    width: 300px;
+    left: -100px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 799px) {
+  .moon {
+    width: 400px;
+    top: 270vh;
+  }
+  .big-moon {
+    width: 400px;
+    left: -100px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes planetAnimation {
+  0% {
+    transform: translateY(100px);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes planetAnimationX {
+  0% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100px);
   }
 }

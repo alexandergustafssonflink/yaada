@@ -1,0 +1,61 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div {
+  width: 20%;
+  margin-left: 150px;
+  margin-top: 150px;
+  font-size: 28px;
+  color: var(--beige);
+  position: relative;
+}
+
+.contact-form input {
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-family: "Podkova";
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.contact-form #message {
+  color: var(--beige);
+  border-bottom: solid 2px var(--beige);
+}
+
+.contact-form #email {
+  color: var(--beige);
+  border-bottom: solid 2px var(--beige);
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--beige);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--beige);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--beige);
+}
+
+.submit-btn {
+  width: 100px;
+  text-align: left;
+  color: var(--beige);
+}
+
+@media only screen and (min-width: 501px) and (max-width: 799px) {
+  .form-div {
+    width: auto;
+    margin: 100px;
+  }
+}

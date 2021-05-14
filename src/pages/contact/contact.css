@@ -1,0 +1,60 @@
+#contact {
+  height: 100vh;
+  background-color: var(--red);
+  position: relative;
+  overflow: hidden;
+}
+
+.landscape-img {
+  position: absolute;
+  bottom: -800px;
+  width: 100%;
+  left: 0px;
+}
+
+#contact h1 {
+  color: var(--beige);
+  font-size: 52px;
+  text-align: left;
+  margin: 100px 0px 0px 150px;
+  z-index: 100;
+  position: relative;
+}
+
+#contact p {
+  text-align: left;
+  margin: 30px 0px 0px 150px;
+  font-size: 28px;
+  position: relative;
+  z-index: 100;
+  color: var(--beige);
+}
+
+@media only screen and (max-width: 500px) {
+  .landscape-img {
+    bottom: 0px;
+  }
+
+  #contact h1 {
+    margin: 30px 15px 15px 15px;
+    font-size: 36px;
+  }
+  #contact p {
+    margin: 15px;
+    font-size: 18px;
+  }
+
+  #contact .form-div {
+    width: auto;
+    margin: 100px 15px 0px 15px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 799px) {
+  #contact h1 {
+    margin: 100px 0px 0px 100px;
+  }
+  #contact p {
+    margin: 30px 0px 0px 100px;
+  }
+}
